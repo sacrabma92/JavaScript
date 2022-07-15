@@ -10,6 +10,7 @@ import NuevoPassword from './pages/NuevoPassword';
 import AdministrarPacientes from './pages/AdministrarPacientes';
 
 import { AuthProvider } from './context/AuthProvider';
+import { PacientesProvider } from './context/PacientesProvider';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <div>
       <BrowserRouter>
         <AuthProvider>
+          <PacientesProvider> 
           <Routes>
             <Route path='/' element={<AuthLayout />}>
               <Route index element={<Login />} />
@@ -29,8 +31,8 @@ function App() {
             <Route path='/admin' element={<RutaProtegida />}>
               <Route index element={<AdministrarPacientes /> } /> 
             </Route>
-
           </Routes>
+          </PacientesProvider> 
         </AuthProvider>
       </BrowserRouter>
     </div>
