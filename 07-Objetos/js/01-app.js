@@ -1,14 +1,14 @@
-const nombre = "Monitor 20 Pulgadas";
-const precio = 300;
-const disponible = true;
+const nombre = 'Monito 20 Pulgadas'
+const precio = 300
+const disponible = true
 
-//Un objeto agrupa todo en una sola variable...
+// Un objeto agrupa todo en una sola variable
 
-//Object Literal
-const producto ={
-    nombre: "Monitor 20 Pulgadas",
-    precio: 300,
-    disponible: true
+// Object literal
+const producto = {
+  nombre: "Monitor 20 Pulgadas",
+  precio: 200,
+  disponible: true
 }
 
-console.log(producto)
+console.log(producto);
