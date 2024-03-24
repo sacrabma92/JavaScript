@@ -1,12 +1,9 @@
-const numeros = [10, 20, 30];
+const numero = [1,2,3]
+console.log(numero)
 
-const meses = new Array('Enero', 'Febrero', 'Marzo');
-
-
-console.log(numeros)
+const meses = new Array('Enero','Febrero','Marzo')
+console.log(meses)
 
 // Un arreglo que contiene datos de todo tipo
-
-const deTodo = ['Hola', 23, false, 'no', null, {nombre: "carlos", trabajo: "Programador"}, [1, 3, 4, 5, 2]]
-
+const deTodo = ['Hola',12,43.2,{nombre: "carlos", trabajo: 'programador'},false,[12,43,53]]
 console.log(deTodo)
