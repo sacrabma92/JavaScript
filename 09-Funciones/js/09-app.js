@@ -1,26 +1,25 @@
+// Metodos de propiedad
 const reproductor = {
-    reproducir: function(id){
-        console.log(`Reproduciendo canción con el id ${id}`);
-    },
-    pausar: function(){
-        console.log('pausando...');
-    },
-    borrar: function(id){
-        console.log(`Borrando canción... ${id}`);
-    },
-    crearPlayList: function(nombre){
-        console.log(`Creando playlist de: ${nombre}`);
-    },
-    borrarPlayList: function(){
-        console.log('Borrando playLis');
-    }
+  reproducir: function (id){
+    console.log(`Reproduciendo canción... con el id ${id}`)
+  },
+  pausar: function (){
+    console.log(`Pusando...`)
+  },
+  borrar: function (id){
+    console.log(`Borrando canción... ${id}`)
+  },
+  crearPlayList: function(lista){
+    console.log(`PlayList creada: ${lista}`)
+  },
+  reproducirPlayList: function(nombre){
+    console.log(`Reproduciendo: ${nombre}`)
+  }
 }
 
 reproductor.reproducir(20);
-reproductor.reproducir(40);
-reproductor.pausar();
-reproductor.borrar(20);
-reproductor.crearPlayList('Mana');
-reproductor.crearPlayList('Rock');
-reproductor.crearPlayList('Cosasas');
-reproductor.borrarPlayList();
+reproductor.reproducir(10);
+reproductor.pausar()
+reproductor.borrar(30)
+reproductor.crearPlayList('Michael Jakson')
+reproductor.reproducirPlayList('Madona')

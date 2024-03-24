@@ -1,11 +1,6 @@
-const numero1 = 20;
-const numero2 = "20";
+const numero1 = 20
+const numero2 = '20'
 
-console.log(parseInt(numero2));  //Esto es una funcion
-console.log(numero1.toString()); //Esto es un metodo
+console.log( parseInt( numero2 ) ) // esto es unna funcion
 
-function sumar(){
-    console.log((2+2))
-}
-
-sumar();
+console.log(numero1.toString() ) // esto es un metodo
