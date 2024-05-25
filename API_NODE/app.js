@@ -4,8 +4,11 @@ require('dotenv').config();
 const express = require('express');
 // Importamos la libreria cors
 const cors = require('cors');
+// Importamos el archivo de configuracion de la base de datos
+const dbConnect = require('./config/mongo');
 // Creamos la variable app que contendra la aplicacion
 const app = express();
+
 
 // Le asigano a la variable app el uso de la libreria cors
 app.use(cors());
@@ -17,3 +20,5 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`)
 })
+
+dbConnect();
