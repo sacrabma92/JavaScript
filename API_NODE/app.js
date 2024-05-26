@@ -12,6 +12,8 @@ const app = express();
 
 // Le asigano a la variable app el uso de la libreria cors
 app.use(cors());
+// Le asigano a la variable app el uso de la libreria express.json
+app.use(express.json());
 
 // Definimos el puerto en el que se ejecutara la aplicacion
 const port = process.env.PORT || 3000;

@@ -14,8 +14,12 @@ const getItem = (req, res) => {
 }
 
 // Crear un item en la BD 
-const createItem = (req, res) => {
-
+const createItem = async(req, res) => {
+  const {body} = req;
+  // mandamos a llamar el modelo de tracks y creamos un nuevo registro
+  const data = await tracksModel.create(body);
+  // respondemos con el registro creado
+  res.send(data);
 }
 
 // Actualizar un item en la BD 

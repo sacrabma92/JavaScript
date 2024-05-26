@@ -18,7 +18,7 @@ const TrackSchema = new mongoose.Schema({
       message: "ERROR_URL",
     },
   },
-  artirst: {
+  artist: {
     name: {
       type: String,
     },
@@ -29,7 +29,7 @@ const TrackSchema = new mongoose.Schema({
       type: String
     }
   },
-  diration: {
+  duration: {
     start: {
       type: Number,
     },
