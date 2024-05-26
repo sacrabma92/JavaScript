@@ -10,7 +10,7 @@ const PATH_ROUTES = __dirname;
 
 // Declaramos la constante removeExtension que recibe un parametro fileName y retorna el nombre del archivo sin la extension
 const removeExtension = (fileName) => {
-  return fileName.split('.').shift();
+  return fileName.split('.').slice(0, -1).join('.');
 }
 
 // funcion para leer los archivos de la carpeta routes
@@ -19,6 +19,8 @@ fs.readdirSync(PATH_ROUTES).filter((file) => {
   const name = removeExtension(file);
   // si el nombre del archivo es diferente de index
   if(name !== 'index') {
+    console.log(`Cargando ruta ${name}`);
+    console.log(`Cargando ${file}`);
     // la ruta usara el nombre del archivo y requerira el archivo
     router.use(`/${name}`, require(`./${file}`));
   }

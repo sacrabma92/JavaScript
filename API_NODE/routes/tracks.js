@@ -2,10 +2,12 @@
 const express = require('express');
 // importamos las rutas de express
 const router = express.Router();
+// importamos el controlador de tracks
+const { getItems, getItem, createItem } = require('../controllers/tracks');
 
-router.get('/', (req, res) => {
-  res.send('Obteniendo todas las canciones');
-})
+router.get("/", getItems );
+
+router.get("/:id", getItem );
 
 
 
