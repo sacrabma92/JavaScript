@@ -16,6 +16,11 @@ app.use(cors());
 // Definimos el puerto en el que se ejecutara la aplicacion
 const port = process.env.PORT || 3000;
 
+/**
+ * Aqui invocamos a las rutas de la aplicacion
+ */
+app.use('/api', require('./routes'));
+
 // Definimos app.listen para que la aplicacion se ejecute en el puerto definido
 app.listen(port, () => {
   console.log(`Server running on port ${port}`)
